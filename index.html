@@ -1,18 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    <script src="https://unpkg.com/@phosphoricons/web"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
 
-    <title>Aula07</title>
+        <link rel="stylesheet" href="base/main.css">
+        <title>Aula07</title>
+
 </head>
 
 <body>
-    <header class="header"></header>
-    <i class="ph ph-backpack"></i>
-    
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <a= href="/" class="logo-link">
+                    <i class="ph ph-cube"></i>
+                    <span>DevCorp</span>
+                    </a>
+            </div>
+
+            <!--Menu Principal-->
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+
+                    <!--Home-->
+                    <li class="nav-item">
+                        <a href="/" class="nav-link">
+                            <i class="ph ph-house"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+
+                    <!--Produtos com sub menu-->
+                    <li class="nav item has-submenu">
+                        <a href="#" class="nav-link">
+                            <i class="ph ph-package"></i>
+                            <span>Produtos</span>
+                            <i class="ph ph-caret-down submenu-arrow"></i>
+                        </a>
+
+                        <ul class="submenu">
+                            <li class="submenu-item">
+                                <a href="#" class="submenu-link">
+                                    <i class="ph ph-desktop"></i>
+                                    <span>Software Desktop</span>
+                                </a>
+                            </li>
+                            <li class="submenu-item">
+                                <a href="#" class="submenu-link">
+                                    <i class="ph ph-device-mobile"></i>
+                                    <span>App Mobile</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
 </body>
+
 </html>
