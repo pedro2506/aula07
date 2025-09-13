@@ -20,5 +20,4 @@
     right: 0;
     bottom: 0;
     background:  linear-gradient(90deg, var(--color-surface) 0%, rgba(255,255,255, 0.95), var(--color-surface 100%));
-    
 }
