@@ -19,5 +19,59 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background:  linear-gradient(90deg, var(--color-surface) 0%, rgba(255,255,255, 0.95), var(--color-surface 100%));
+    background:  linear-gradient(90deg, var(--color-surface) 0%, rgba(255,255,255, 0.95) 50%, var(--color-surface) 100%);
+    opacity: 0.2;
+    z-index: -1;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:  100%;
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    padding: 0 var(--header-padding);
+    position: relative;
+    z-index: 1;
+}
+
+/* -------------------------------------------*/
+
+.nav {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+    transition: var(--transition-normal);
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: var(--space-1);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    position: relative;
+    list-style: none;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--menu-item-padding);
+    color: var(--color-text-secondary);
+    text-decoration: none;
+    font-weight: var(--font-wieght-medium);
+    font-size: var(--font-size-sm);
+    border-radius: var(--border-radius-md);
+    position: relative;
+    white-space: nowrap;
+    outline-offset: 2px;
+    transition: var(--transition-colors);
 }
