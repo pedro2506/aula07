@@ -65,5 +65,5 @@ html:focus-within{
 body{
     min-height: 100vh;
     color: var(--color-text-primary);
-    background-color: var(--color-background);
+    /*background-color: var(--color-background);
 }

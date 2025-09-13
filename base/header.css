@@ -1,0 +1,24 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: var(--header-height);
+    background: var(--color-surface);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border-bottom: 1px solid var(--color-border);
+    z-index: var(--z-index-fixed);
+    box-shadow: var(--shadow-sm);
+}
+
+.header::before {
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:  linear-gradient(90deg, var(--color-surface) 0%, rgba(255,255,255, 0.95), var(--color-surface 100%));
+    
+}
